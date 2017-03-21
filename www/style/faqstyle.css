@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+<!--These are the special divs for the FAQs page.-->
+.toggle {
+	color: red;
+	font-size:400%;
+    display: none;}

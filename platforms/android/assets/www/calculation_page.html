@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Idaho Business Association - examples</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  	<script type="text/javascript" src="style/pure.js"></script>
+    <script  type="text/javascript" src="style/date.js"></script>
+</head>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+            <h1><a href="index.html">Idaho<span class="logo_colour">Association of Business</span></a></h1>
+          <h2>An Advocate for All Idaho Small Businesses</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          <li class="selected"><a href="calculation_page.html">Tax Rate</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="newsletter.html">Newsletter</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="cash_registrar.html">Change Calculator</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <!-- insert your sidebar items here -->
+            <h3>Latest News</h3>
+            <h4>New Website Launched</h4>
+              <h5>August 26st, 2016</h5>
+            <p>2016 sees the birth of our glorious website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="#">link 1</a></li>
+              <li><a href="#">link 2</a></li>
+              <li><a href="#">link 3</a></li>
+              <li><a href="#">link 4</a></li>
+            </ul>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Search</h3>
+            <form method="post" action="#" id="search_form">
+              <p>
+                <input class="search" type="text" name="search_field" value="Enter keywords....." />
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+              </p>
+            </form>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Pre-Adjustment Tax Calculator</h1>
+        
+        <!--You are replacing all of the investment labels with tax rates. The previous tags were: investment=>revenue, rate=>federal_rate, years=>idaho_rate, future_value=>taxes_owed
+        
+        You are going to have to disable all of the other input portions. You will want to use innerHTML to alter the results-->
+        <h2>Enter Your Annual Revenue</h2>
+        <form action="#" method="post">
+          <div class="form_settings">
+            <p><span>Annual Revenue</span><input type="text" name="revenue1" id="revenue" value="" /></p><span id="revenue_error"></span>
+            <p><span>Federal Taxes</span><input type="text" name="federal1" id="federal_rate" value="" disabled/></p>
+            <p><span>Idaho Taxes</span><input type="text" name="name" id="idaho_rate" value="" disabled/></p>
+            <p><span>Total Taxes Owed</span><input type="text" name="name" id="taxes_owed" value="" disabled/></p>
+            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="button" id="Calculate_button" name="button" value="Calculate" /></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="content_footer"></div>
+   <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="calculation_page.html">Tax Rate</a> | <a href="faqs.html">FAQs</a> | <a href="newsletter.html">Newsletter</a> | <a href="contact.html">Contact Us</a></p>
+      <p> | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a></p>
+      <p><span id="todaysDate"></span></p>
+    </div>
+  </div>
+</body>
+</html> 
